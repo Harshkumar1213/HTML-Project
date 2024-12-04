@@ -1,0 +1,82 @@
+:root{
+    --secondary-color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button{
+    border: none;
+    outline: none;
+}
+
+body{
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #60ebeb 0%, #5eb4ee 100%);
+}
+
+.content{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.counter-box{
+    width: 50%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 600;
+    background-color: rgba(118, 114, 114, 0.959);
+    border-radius: 8px;
+}
+
+.button{
+    width: 80%;
+    height: 3rem;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.increment-btn{
+    margin: 2em 0 1em 0;
+    background-color: blue;
+    font-weight: bold;
+}
+
+.save-btn{
+    background-color: rgb(64, 244, 64);
+    font-weight: bold;
+}
+
+.entries p{
+    margin: 2.5rem 0 1rem 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.entries-field{
+    font-size: 20px;
+    color: #000;
+}

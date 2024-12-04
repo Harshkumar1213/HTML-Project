@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#5ff49d, #80d0c7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.card{
+    position: relative;
+    width: 427px;
+    height: 640px ;
+    background: white;
+    box-shadow: 3px 4px 5px rgb(0, 0, 0, 1); 
+}
+.card:before,
+.card:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: 1s;
+    z-index: -1;
+}
+.card:hover:before{
+    transform: rotate(20deg);
+    box-shadow: 0 2px  20px rgb(0, 0, 0, 0.2);
+    background: rgb(244, 136, 73);
+}
+.card:hover:after{
+    transform: rotate(10deg);
+    box-shadow: 0 2px  20px rgb(0, 0, 0, 0.2);
+    background: rgb(240, 130, 60);
+}
+.imgbox{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 1s;
+    z-index: 2;
+}
+.card:hover .imgbox{
+    bottom: 70px;
+}
+.deatils{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+    background: rgb(247, 182, 62);  
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
