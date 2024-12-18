@@ -10,7 +10,7 @@ function tick() {
   const s = now.getSeconds();
 
   const html = `TIME-<span>${h} :</span><span>${m} :</span><span>${s}</span>`;      
-  clock.innerHTML = html;
+  clock.innerHTML = `TIME-${now.toLocaleTimeString()}`;
   
   const d = now.getDate();
   const M = now.getMonth();
